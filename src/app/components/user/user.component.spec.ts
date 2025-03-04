@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { UserComponent } from './user.component';
+import { DataBindingComponent } from '../data-binding/data-binding.component';
+import { AdminComponent } from '../admin/admin.component';
 
 describe('UserComponent', () => {
   let component: UserComponent;
@@ -8,7 +10,7 @@ describe('UserComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [UserComponent]
+      imports: [UserComponent,DataBindingComponent,AdminComponent]
     })
     .compileComponents();
 
